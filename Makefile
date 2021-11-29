@@ -7,6 +7,7 @@ INC_DIR=.
 FLAGS=-Wall
 FLAGS += -g
 FLAGS += -I$(INC_DIR)
+FLAGS += -lusb-1.0
 
 TARGET_EXTENSION=.o
 
@@ -17,3 +18,6 @@ clean:
 
 test:
 	$(CC) $(FLAGS) lib/DeviceListener.cpp src/main.cpp -o src/test-lib$(TARGET_EXTENSION)
+
+test-libusb:
+	$(CC) src/test.cpp -o test$(TARGET_EXTENSION)

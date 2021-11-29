@@ -5,6 +5,8 @@
 int main() {
   int device_event_flag = 0;
 
+  DeviceListener *pListener;  // construtor sem parâmetros
+
   while (1) {
     switch (device_event_flag) {
       case 0:
