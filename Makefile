@@ -1,6 +1,6 @@
 # MAKEFILE
 
-CC=gcc
+CC=g++
 
 INC_DIR=.
 
@@ -10,7 +10,7 @@ FLAGS += -I$(INC_DIR)
 
 TARGET_EXTENSION=.o
 
-all: clean test
+all: test
 	 
 clean:
 	rm src/*~ src/*.o
